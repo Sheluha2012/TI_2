@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="631.0" prefWidth="551.0" spacing="10" style="-fx-background-color: linear-gradient(to bottom right, #ff7e5f, #ca94f1);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LFSR.Controller">
+   <HBox prefHeight="47.0" prefWidth="762.0">
+      <children>
+         <Label style="-fx-font-size: 18; -fx-font-weight: bold; -fx-font-style: italic;" text="P(x) = " />
+      
+          <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="x²⁹ + x² + 1">
+              <font>
+                  <Font name="Arial" size="18.0" />
+              </font>
+          </Label>
+      </children>
+      <padding>
+         <Insets top="10.0" />
+      </padding>
+   </HBox>
+     <Label fx:id="labelLength" minWidth="100" style="-fx-font-size: 14; -fx-font-weight: bold;" text="0/29 бит начального состояния:" />
+
+    <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 10 0 10 0;">
+        <TextField fx:id="startConditionField" minWidth="266.0" onKeyPressed="#handleFieldEdit" onKeyTyped="#handleFieldEdit" prefHeight="26.0" prefWidth="266.0" />
+    </HBox>
+   <HBox prefHeight="39.0" prefWidth="795.0" spacing="20.0">
+      <children>
+         <Button fx:id="openFileButton" mnemonicParsing="false" onAction="#handleOpenFile" prefHeight="26.0" prefWidth="233.0" text="Открыть" />
+         <Button fx:id="cipherButton" disable="true" mnemonicParsing="false" onAction="#handleCipher" prefHeight="26.0" prefWidth="240.0" text="Шифровать" />
+         <Button fx:id="saveFileButton" mnemonicParsing="false" onAction="#handleSaveFile" prefHeight="26.0" prefWidth="219.0" text="Сохранить" />
+      </children>
+   </HBox>
+
+    <VBox prefHeight="424.0" prefWidth="590.0" spacing="5" style="-fx-padding: 10 0 0 0;">
+        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Исходный текст M:" />
+        <TextArea fx:id="plainText" editable="false" prefHeight="108.0" prefWidth="590.0" wrapText="true" />
+
+        <Label style="-fx-font-size: 14; -fx-font-weight: bold;" text="Ключ K:" />
+        <TextArea fx:id="keyText" editable="false" prefHeight="110.0" prefWidth="590.0" wrapText="true" />
+
+        <Label style="-fx-font-weight: bold; -fx-font-size: 14;" text="Шифротекст C:" />
+        <TextArea fx:id="cipherText" editable="false" prefHeight="106.0" prefWidth="590.0" wrapText="true" />
+    </VBox>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" />
+   </padding>
+</VBox>

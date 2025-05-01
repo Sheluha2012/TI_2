@@ -1,0 +1,14 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\IlyaPC\Desktop\bsuir\рх\lab22\TI-Lab-2-master\out\artifacts\lab2_jar\lab2.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\IlyaPC\Desktop\bsuir\рх\lab22\TI-Lab-2-master\out\artifacts\lab2_jar\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	JRE
+Check launcher:	C:\Users\IlyaPC\Desktop\bsuir\рх\lab22\TI-Lab-2-master\out\artifacts\lab2_jar\JRE\bin\javaw.exe (not found)
+Error msg:	This application requires a Java Runtime Environment.
